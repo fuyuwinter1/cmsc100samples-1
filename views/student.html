@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html><head>
+	<title>Galadhrim</title>
+	<meta charset="utf-8"/>
+
+</head><body>
+	<section>
+		<header><h3>galadhrim.api</h3></header>
+	</section>
+	<article>
+		<div>
+			<h5>Data Management</h5>
+			<a href="college.html">College</a><br/>
+			<a href="degree.html">Degree Program</a><br/>
+			<a href="curriculum.html">Curriculum</a><br/>
+			<a href="student.html">Student</a><br/>
+		</div>
+		<div>
+			<h3>Student</h3>
+			<p>A college is a unit<br/> responsible for offering<br/>degree programs.</p>
+		</div>
+	</article>
+	<aside>
+		<h2>REST API</h2>
+		<h4>Create college</h4>
+		<p>
+			POST<br/>
+			/api/colleges<br/>
+			@param code<br/>
+			@param name
+		</p>
+		<h4>Example Request</h4><br/>
+		<p>
+		curl:<a href="http://ws.c/api/colleges">http://ws.c/api/colleges</a>	
+		</p>
+		<h4>Example Response</h4>
+		<p>
+		{<br/>
+		"_id":1,<br/>
+		"code":"CA",<br/>
+		"name":"College of Arts"<br/>
+		}
+		</p>
+	</aside>
+
+</body></html>
