@@ -23,15 +23,23 @@
 			document.getElementbyId("message").innerHTML=status;
 		}
 		function guessNumber(){
+			var guess = Math.floor((Math.random()*100)+1);
 			var x = prompt("Enter a number");
+			
+			while(true){
 			try{
-				if(x=="") throw 'empty';
-				if(isNaN(x)) throw "not a number";
-				x = Number(x);
-				if(x<5) throw "too low";
-				if(x>10) throw "too high";
+				if((x=="") || (isNaN(x))){x=prompt("Enter a number");}
+				else{
+					x = Number(x);
+					if(x<guess){x=prompt("Higher!");}
+					else if(x>guess){x=prompt("Lower!");}
+					else{alert("Correct!");break;}
+				}
+			continue;
 			}catch(err){alert("Input is "+ err);}
-			finally{alert("End of try-catch statement");}
+			finally{}
+			}
 		}
 	</script>
-</body></html>
+</body></html
+
