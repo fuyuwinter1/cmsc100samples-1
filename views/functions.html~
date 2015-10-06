@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html><head>
+
+	<title>FUNCTIONS</title>
+	<meta charset="utf-8"/>
+	<script src="jaro_e7.js"></script>
+	
+
+
+</head><body>
+	<script>
+		var car1 = new car("PLATE1", "MODEL1", "COLOR1");
+		
+		car1.startCar();
+	
+		car1.accelerate(7);
+		
+		car1.decelerate(2);
+		
+	
+	</script>
+</body></html>
