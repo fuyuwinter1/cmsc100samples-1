@@ -4,7 +4,7 @@
   "description": "ERROR: No README data found!",
   "main": "index.js",
   "directories": {
-    "example": "example"
+    "test": "test"
   },
   "scripts": {
     "test": "mocha"
